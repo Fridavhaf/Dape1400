@@ -13,8 +13,9 @@ public class VariablerOppgave {
         String innAdresse = showInputDialog("Skriv inn adresse");
         String innPostnr = showInputDialog("Skriv inn postnummer");
         String innPostadresse = showInputDialog("Skriv inn postadresse");
-        showMessageDialog(null, "Navn : "+innFornavn+" "+innEtternavn+"\n"+"Adresse : "+innAdresse
-        +"\n"+"Postnummer : "+innPostnr+"\n"+"Poststed : "+innPostadresse+"\n"+"Alder : "+innAlder);
+        String ut = "Navn : "+innFornavn+" "+innEtternavn+"\n"+"Adresse : "+innAdresse
+                +"\n"+"Postnummer : "+innPostnr+"\n"+"Poststed : "+innPostadresse+"\n"+"Alder : "+innAlder;
+        System.out.println(ut);
 
 
     }
