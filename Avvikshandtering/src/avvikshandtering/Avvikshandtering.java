@@ -1,7 +1,6 @@
 package avvikshandtering;
 
 import javax.swing.*;
-
 public class Avvikshandtering {
     public static void main (String []args){
         String innStreng1 = JOptionPane.showInputDialog("Skriv inn et heltall");
@@ -20,7 +19,7 @@ public class Avvikshandtering {
         //Vi kan f eks prøve try/catch. Vi kan først prøve try. Vi må definere int før try
         //Hvis ikke try funker må vi ha en catch, feks. tall=0 ved error eller vi kan printe
        //feimeldingen med System.out.println(e);
-       /*java.lang.NumberFormatException: For input string: "fkoe"
+       /*java.lang.NumberFormatException: For input string: "fje"
         Tallet er 0 * - den øverste meldingen er pga System.out.print kommando*/
 
 }
