@@ -23,7 +23,6 @@ package klasserOgObjekter;
 
     }
 
-
     public class MetoderInnOgUtdata {
         public static void main(String[] args) {
             Båt nyBåt = new Båt ();
