@@ -2,9 +2,9 @@
 
 package oppgave1;
 
-public class Oblig1Oppgave1 { //Her har vi klassen hvor vi skal kjøre programmet
+public class Oblig1Oppgave1 { //Her har vi hoved-klassen hvor vi skal kjøre programmet
     public static void main (String [] args){ //Denne main-metoden kjører programmet
-        double radius = 23.5; //Vi må definere radius, som er parameter for alle metodene i Sirkel-klassen
+        double radius = 23.5; //Vi definerer en double radius med verdien 23.5
 
         /*Vi har statiske metoder i Sirkel-klassen, og det betyr at vi ikke trenger å instansiere et objekt av type Sirkel
         *Vi kan hente metodene kun ved Klassenavn.metodeNavn(parameter).
