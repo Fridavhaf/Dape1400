@@ -1,4 +1,8 @@
-//STUDENTNUMMER OG FULLT NAVN PÅ DELTAKERE
+/*
+Levert av gruppe 102
+Eda Gulcan: 385395
+Frida von Hafenbrädl: 385353
+*/
 
 package oppgave1;
 

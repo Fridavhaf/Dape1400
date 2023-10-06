@@ -1,4 +1,8 @@
-//STUDENTNUMMER OG FULLT NAVN PÅ ALLE DELTAKERE
+/*
+Levert av gruppe 102
+Eda Gulcan: 385395
+Frida von Hafenbrädl: 385353
+*/
 
 package oppgave2;
 
@@ -25,8 +29,8 @@ public class Vare { //Vi oppretter en public class med navn Vare. Den heter alts
         //Konstruktøren heter Vare og inneholder alle attributtene
 
         this.navn = navn;
-        this.antall = antall;
-        this.pris = pris;
+        setAntall(antall);
+        setPris(pris);
 
         /*med this-kommandoen etterfulgt av .variabelnavn velger vi variabelen som er definert i denne klassen
         Vi setter variablene navn, tall og pris i klassen til henholdsvis å være like attributtene i konstruktøren*/

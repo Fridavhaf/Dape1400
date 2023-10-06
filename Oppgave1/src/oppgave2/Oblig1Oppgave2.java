@@ -1,4 +1,8 @@
-//STUDENTNUMMER OG FULLT NAVN PÅ ALLE DELTAKERE
+/*
+Levert av gruppe 102
+Eda Gulcan: 385395
+Frida von Hafenbrädl: 385353
+*/
 
 package oppgave2;
 
@@ -76,7 +80,7 @@ public class Oblig1Oppgave2 {
         double totalPris = (vare1.beregnTotalpris()) + (vare2.beregnTotalpris());
         //Her blir totalprisen for vare1 og vare2 addert sammen, siden vi vil finne totalprisen av begge varene
 
-        String totalPrisMedToDesimaler = String.format("%.2f", totalPris);
+        String totalPrisMedToDesimaler = String.format("%.1f", totalPris);
         //Det kan være greit å sette en restriksjon på to desimaler når det er snakk om pris
 
         System.out.println("Totalprisen ble : " + totalPrisMedToDesimaler + " kr.");
