@@ -27,48 +27,53 @@ class Person{
         this.telefonnr = telefonnr;
     }
 
-    public String getFornavn (){
+    public void setFornavn(String fornavn){
+        this.fornavn=fornavn;
+    }
+    public String getFornavn(){
         return fornavn;
     }
 
-    public void setFornavn (String fornavn){
-        this.fornavn = fornavn;
+    public void setEtternavn(String etternavn){
+        this.etternavn = etternavn;
     }
-
     public String getEtternavn(){
         return etternavn;
     }
-    public void setEtternavn(String etternavn){
-        this.etternavn = etternavn;
+
+    public void setAdresse(String adresse){
+        this.adresse = adresse;
     }
     public String getAdresse(){
         return adresse;
     }
-    public void setAdresse(String adresse){
-        this.adresse = adresse;
+
+    public void setTelefonnr(String telefonnr){
+        this.telefonnr = telefonnr;
     }
     public String getTelefonnr(){
         return telefonnr;
     }
-    public void setTelefonnr(String telefonnr){
-        this.telefonnr = telefonnr;
-    }
+
     public void skrivUt(){
-        String ut = "Navn : "+fornavn+" "+etternavn+"\n"+"Adresse : "+adresse+"\n"+"Telefonnummer : "+telefonnr;
+        String ut = "Fornavn : "+fornavn+"\nEtternavn : "+etternavn+"\nAdresse : "+adresse+"\nTelefonnummer : "+
+                telefonnr;
         JOptionPane.showMessageDialog(null, ut);
     }
 
-
 }
+
+
 public class Oppgave1 {
-    public static void main (String[]args){
+    public static void main (String [] args){
         String fornavn = JOptionPane.showInputDialog("Skriv inn fornavn");
         String etternavn = JOptionPane.showInputDialog("Skriv inn etternavn");
         String adresse = JOptionPane.showInputDialog("Skriv inn adresse");
         String telefonnr = JOptionPane.showInputDialog("Skriv inn telefonnr");
-        Person Frida = new Person(fornavn, etternavn, adresse,telefonnr);
-        Frida.skrivUt();
+        Person nyPerson = new Person(fornavn, etternavn, adresse, telefonnr);
+        nyPerson.skrivUt();
 
     }
+//Merk: vi har ikke brukt set/get-metodene til noe
+    //Vi trenger ikke de, alle variablene blir satt med input-bokser
 }
-//Legg merke til: get/set-metodene lages, men vi bruker de ikke i dette programmet.
