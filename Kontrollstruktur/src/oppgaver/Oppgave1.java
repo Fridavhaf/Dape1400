@@ -13,7 +13,7 @@ hva du vil på polet”.
 public class Oppgave1 {
     public static void main(String[] args) {
         int alder = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn alderen din"));
-        if (alder >= 18 && alder < 20){
+        if (alder >= 18 && alder <= 20){
             JOptionPane.showMessageDialog(null, "Du er myndig, " +
                     "men kan ikke kjøpe alkohol med mer enn 22% på polet");
         }

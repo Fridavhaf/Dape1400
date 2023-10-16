@@ -35,7 +35,7 @@ public class Oppgave2_3_4 {
         if (alder < 18){
             JOptionPane.showMessageDialog(null, "Du er for ung til å ta førerkort for bil");
         }
-        else if (alder >= 18 && alder<70){
+        else if (alder<70){
             JOptionPane.showMessageDialog(null, "Du kan ta førerkort for bil og du trenger ikke årlige legesjekker");
         }
         else{
