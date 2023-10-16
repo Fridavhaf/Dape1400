@@ -18,9 +18,13 @@ import javax.swing.*;
 public class Oppgave1 {
     public static void main (String [] args){
 
+        //Oppretter 2 innlesningsbokser som konverter input til heltall
         int nedreGrense = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn nedre grense for tall som skal summeres"));
         int øvreGrense = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn øvre grense for tall som skal summeres"));
 
+        /*Hvis øvre grense er mindre enn eller lik den nedre grensen, kommer dette i en meldingsboks,
+        og tallet må endres.
+        */
         if (øvreGrense <= nedreGrense){
             JOptionPane.showMessageDialog(null, "Den øvre grensen er mindre eller lik den nedre grensen"+
                     "\nVennligst skriv inn et tall som er høyere enn den nedre grensen");
@@ -29,19 +33,19 @@ public class Oppgave1 {
             //Vi trenger ikke definere øvreGrense som en double igjen, det er allerede fastsatt.
         }
 
-        System.out.print("Summen av tallene ");
 
+        System.out.print("Summen av tallene ");
+        //Jeg setter int sum til 0. For hver runde i løkken skal de forskjellige verdiene av i adderes til denne summen.
         int sum = 0;
         for (int i = nedreGrense; i <= øvreGrense; i++){
             sum += i;
-
+//Vi vil printe hver verdi av i for å få printet ut tallrekken
             System.out.print(i);
-
+//Hvis tallet ikke er det siste i rekken, vil jeg ha et etterfølgende plusstegn
             if (i < øvreGrense){
                 System.out.print(" + ");
             }
         }
-
         System.out.print(" = " + sum);
 
 
