@@ -29,19 +29,28 @@ public class Oppgave1 {
             JOptionPane.showMessageDialog(null, "Den øvre grensen er mindre eller lik den nedre grensen"+
                     "\nVennligst skriv inn et tall som er høyere enn den nedre grensen");
 
-            øvreGrense = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn nedre grense for tall som skal summeres"));
-            //Vi trenger ikke definere øvreGrense som en double igjen, det er allerede fastsatt.
+            øvreGrense = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn øvre grense for tall som skal summeres"));
+            /*Det gis en ny sjanse for å skrive inn riktig data. Hvis det skrives feil her og, avsluttes programmet
+            og summen settes til null.
+            Vi trenger ikke definere øvreGrense som en double igjen, det er allerede fastsatt.*/
         }
 
-
-        System.out.print("Summen av tallene ");
         //Jeg setter int sum til 0. For hver runde i løkken skal de forskjellige verdiene av i adderes til denne summen.
         int sum = 0;
+        int antall = 0;
         for (int i = nedreGrense; i <= øvreGrense; i++){
             sum += i;
+            antall++;
+
 //Vi vil printe hver verdi av i for å få printet ut tallrekken
             System.out.print(i);
 //Hvis tallet ikke er det siste i rekken, vil jeg ha et etterfølgende plusstegn
+
+            if (antall>10){
+                System.out.print("\n");
+                antall=0;
+            }
+
             if (i < øvreGrense){
                 System.out.print(" + ");
             }
