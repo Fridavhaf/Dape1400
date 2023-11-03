@@ -46,7 +46,7 @@ public class Oppgave1 {
             System.out.print(i);
 //Hvis tallet ikke er det siste i rekken, vil jeg ha et etterfølgende plusstegn
 
-            if (antall>10){
+            if (antall>9){
                 System.out.print("\n");
                 antall=0;
             }
